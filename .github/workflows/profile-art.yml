@@ -1,4 +1,4 @@
-name: Profile activity art
+name: Profile auto update
 
 on:
   schedule:
@@ -8,6 +8,8 @@ on:
     branches: [main]
     paths:
       - .github/profile-3d.json
+      - .github/open-source.json
+      - .github/scripts/open_source.py
       - .github/workflows/profile-art.yml
 
 permissions:
@@ -49,3 +51,25 @@ jobs:
           git add profile-3d.svg snake.svg
           git commit -q -m "chore: render activity art"
           git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
+
+  open-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Refresh open-source contributions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_LOGIN: ${{ github.repository_owner }}
+        run: python3 .github/scripts/open_source.py README.md .github/open-source.json
+
+      - name: Commit README
+        run: |
+          if git diff --quiet README.md; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -q -m "docs: refresh open-source contributions"
+          git push -q

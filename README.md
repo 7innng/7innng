@@ -31,11 +31,13 @@ My main project is an engineering platform for custom-automation companies. It c
 | 7 | [**excel-word-filler**](https://github.com/7innng/excel-word-filler) | 按表头把 Excel 数据填进 Word 模板，原有样式一处不变<br><sub>Fills Word table templates from Excel by column name and keeps every style intact.</sub> | Python, python-docx |
 | 8 | [**openclaw-knowledge-base**](https://github.com/7innng/openclaw-knowledge-base) | 脱敏后的 AI 助手身份、准则与工具配置模板<br><sub>Sanitized identity, guideline and tool templates for an AI assistant.</sub> | Markdown |
 
+<!-- open-source:start -->
 ## 开源贡献 / Open source
 
-| 项目<br>Project | 贡献<br>Contribution | 状态<br>Status |
-| --- | --- | :-: |
-| [**dofastted/vm2api**](https://github.com/dofastted/vm2api)<br><img alt="GitHub stars" src="https://img.shields.io/github/stars/dofastted/vm2api?style=flat-square&label=stars&color=1C6CB0"> | [#1022 修复 Pro 账号 Fable 额度的展示](https://github.com/dofastted/vm2api/pull/1022)：详情页、列表和机架按真实窗口读数显示用量，区分 0% 与未探测，号池额度计入 Pro 窗口；13 个文件，+187 / −94，通过 23 项相关测试<br><sub>Fixed how Fable quota shows for Pro accounts: real window readings across the detail, list and rack views, a clear split between 0% and not probed, and pool capacity that counts Pro windows. 13 files, +187 / −94, verified by 23 related tests.</sub> | 已合并<br><sub>Merged</sub> |
+| 项目<br>Project | 贡献<br>Contribution | 规模<br>Size | 状态<br>Status |
+| --- | --- | :-: | :-: |
+| [**dofastted/vm2api**](https://github.com/dofastted/vm2api)<br><img alt="GitHub stars" src="https://img.shields.io/github/stars/dofastted/vm2api?style=flat-square&label=stars&color=1C6CB0"> | [#1022 修复 Pro 账号 Fable 额度的展示](https://github.com/dofastted/vm2api/pull/1022)：详情页、列表和机架按真实窗口读数显示用量，区分 0% 与未探测，号池额度计入 Pro 窗口，通过 23 项相关测试<br><sub>Fixed how Fable quota shows for Pro accounts: real window readings across the detail, list and rack views, a clear split between 0% and not probed, and pool capacity that counts Pro windows. Verified by 23 related tests.</sub> | +187 / −94<br><sub>13 个文件 files</sub> | 已合并<br><sub>Merged 2026-11-14</sub> |
+<!-- open-source:end -->
 
 ## 贡献 / Activity
 

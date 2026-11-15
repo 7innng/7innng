@@ -1,0 +1,7 @@
+{
+  "https://github.com/dofastted/vm2api/pull/1022": {
+    "title": "修复 Pro 账号 Fable 额度的展示",
+    "zh": "详情页、列表和机架按真实窗口读数显示用量，区分 0% 与未探测，号池额度计入 Pro 窗口，通过 23 项相关测试",
+    "en": "Fixed how Fable quota shows for Pro accounts: real window readings across the detail, list and rack views, a clear split between 0% and not probed, and pool capacity that counts Pro windows. Verified by 23 related tests."
+  }
+}
